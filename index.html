@@ -1,11 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+    <style>
+        input[type=number] {
+            width: 100%;
+            padding: 12px 0px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+
+        }
+        input[type=submit] {
+            margin-top: 10px;
+            border-color: bisque;
+            background-color: white;
+
+        }
+
+
+        .input-boxes{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        
+        }
+
+        .header-text{
+            padding-top: 3pc;
+            font-family: Arial, Helvetica, sans-serif; 
+            color: cyan; 
+            font-size:150%;
+
+        }
+
+        .header-box{
+            background-color: lightcoral; 
+            height: 300px; 
+            text-align: center; 
+            border-radius: 10px;
+        }
+        
+        label{
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .input-box-1{
+            width:450px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+            flex: 1 1 auto;
+        }
+        .input-box-2{
+            width:450px;
+            flex: 1 1 auto;
+            margin-right: 10px;
+        }
+        
+        .message{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        </style>
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-    <h1>Homework #5</h1>
+    <div class = "header-box">
+        <div class = "header-text">
+            <h1>Homework #5</h1>
+            <h2> Find all prime numbers between two numbers</h2>
+        </div>  
+    </div>
 
+    <div class = "input-boxes">
+            <div class = "input-box-1" id = "input-box-1">
+                <label for="num1">Number 1: </label>
+                <br>
+                <input type="number" id="num1" name="num1">
+            </div>
+
+            <div class = "input-box-2" id = "input-box-2">
+                <label for="num2">Number 2: </label>
+                <br>
+                <input type="number" id="num2" name="num2">
+            </div>
+            <br>
+    </div>
+    <input type = "submit" id = "submit" value="SUBMIT">
+
+
+
+    <h1 class = "message" id = "message"></h1>
     <script src="index.js"></script>
+
+
+    
+
+    
 </html>
