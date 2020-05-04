@@ -37,7 +37,7 @@ function validator(){
         }
         tempAr.sort()
 
-        document.getElementById("message").innerHTML = "<p style = 'color: cyan;'>There are " + tempAr.length + " prime numbers</p> <p style = 'color: red;'>" + tempAr + "</p>";
+        document.getElementById("message").innerHTML = "<p style = 'color: cyan;'>There are " + tempAr.length + " prime number(s)</p> <p style = 'color: red;'>" + tempAr + "</p>";
 
     }
 }
